@@ -1,0 +1,28 @@
+@import '../../scss/mixins.scss';
+
+.Payout {
+    display: flex;
+    max-width: remCalc(500px);
+    margin: auto;
+
+    .Payout__note {
+        background: #DCE1C3;
+        border: 1px solid #5D5E59;
+        color: #5D5E59; 
+        font-size: 20px;
+        width: remCalc(100px);
+        text-align: center;
+        margin: remCalc(10px);
+        display: inline-block;
+    }
+    .Payout__column {
+        flex: 1 0 50%;
+    }
+}
+
+.Payout__error {
+    width: remCalc(500px);
+    margin: auto;
+    font-size: remCalc(30px);
+    color: red;
+}

@@ -1,0 +1,6 @@
+@import './variables';
+
+@function remCalc($size) {
+    $remSize: $size / $font_size;
+    @return #{$remSize}rem;
+}

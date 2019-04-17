@@ -1,0 +1,61 @@
+@import '../../scss/mixins.scss';
+
+.FunctionDials {
+    display: flex;
+    flex-wrap: wrap;
+
+    .FunctionDials__key {
+        flex: 1 0 33%;
+        background: #E0E0E0;
+        color: #000;
+        border-right: 1px solid #8E8E8E;
+        border-bottom: 1px solid #8E8E8E;
+        font-size: remCalc(20px);
+        height: remCalc(45px);
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.1s linear;
+
+        &:nth-child(3n) {
+            border-right: none;
+        }
+
+        &.FunctionDials__key--cancel {
+            $color: rgba(251, 72, 41, 0.5); 
+            background: $color;
+            border-color: $color;
+
+            &:active {
+                $color: rgba(251, 72, 41, 1); 
+                background: $color;
+                border-color: $color;
+            }
+        }
+
+        &.FunctionDials__key--clear {
+            $color: rgba(250, 148, 34, 0.5);
+            background: $color;
+            border-color: $color;
+
+            &:active {
+                $color: rgba(250, 148, 34, 1);
+                background: $color;
+                border-color: $color;
+            }
+        }
+
+        &.FunctionDials__key--enter {
+            $color: rgba(145,235,87, 0.5);
+            background: $color;
+            border-color: $color;
+
+            &:active {
+                $color: rgba(145,235,87, 1);
+                background: $color;
+                border-color: $color;
+            }
+        }
+
+    }
+}

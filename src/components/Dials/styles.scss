@@ -1,0 +1,38 @@
+@import '../../scss/mixins.scss';
+
+.Dials {
+    display: flex;
+    flex-wrap: wrap;
+        max-width: remCalc(350px);
+        margin: auto;
+        padding: 0 0 remCalc(60px) 0;
+        
+    .Dials__key_container {
+        flex: 1 0 33%;
+        padding: remCalc(10px);
+    }
+
+    .Dials__key {
+        margin: auto;
+        display:block;
+        background: rgba(0,0,0,0.3);
+        color: #fff;
+        font-size: remCalc(20px);
+        height: remCalc(90px);
+        width: remCalc(90px);
+        border-radius: remCalc(50px);
+        text-align: center;
+        border: none;
+        padding: 20px;
+        cursor: pointer;
+        transition: background-color 0.1s linear;
+
+        &:nth-child(3n) {
+            border-right: none;
+        }
+        
+        &:active {
+            background-color: #00B9EE;
+        }
+    }
+}

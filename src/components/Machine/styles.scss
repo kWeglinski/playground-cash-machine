@@ -1,0 +1,12 @@
+@import '../../scss/mixins.scss';
+
+.Machine {
+    display: block;
+    max-width: remCalc(500px);
+    width: 100%;
+    margin: auto;
+    border: 1px solid #2e3033;
+    background-image: linear-gradient(to right top, #002c44, #003a52, #00495e, #005869, #006872);
+    color: #fff;
+    border-radius: remCalc(4px);
+}

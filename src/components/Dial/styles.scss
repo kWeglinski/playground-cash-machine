@@ -1,0 +1,16 @@
+@import '../../scss/mixins.scss';
+
+.Dial {
+    border: none;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    border-radius: remCalc(45px);
+    padding: remCalc(10px) remCalc(20px);
+    margin: remCalc(10px);
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+
+    &:active {
+        background-color: #00B9EE;
+    }
+}
