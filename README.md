@@ -6,6 +6,7 @@ I.e. it should return $10, $20, $50, $100, $100 for $280
 Otherwise it should provide errors for cases as
  - If it cannot payout due to lack of particular note 
  - If it cannot payout because given number is not natural
+
  Everything is wrapped into a bit modernised look of cash machine.
  
 
